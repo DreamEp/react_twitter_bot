@@ -1,10 +1,96 @@
+
 .App {
   text-align: center;
+
 }
 
-.App-logo {
+* {
+  box-sizing: border-box;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 100%;
+  text-align: left;
+
+  /*height: 300px; /* Should be removed. Only for demonstration */
+}
+
+
+.column.setup{
+  background-color: aquamarine;
+}
+
+.column.bot{
+  background-color: aqua;
+  
+}
+
+.column.log{
+  background-color: azure;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
+
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -35,4 +121,4 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
